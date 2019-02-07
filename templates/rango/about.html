@@ -13,6 +13,13 @@ Rango
     <br />
   </div>
   <div>
+    {% if visits %}
+    You have visited {{visits}} time.
+    {% else %}
+    <strong>There are no visits present.</strong>
+    {% endif %}
+  </div>
+  <div>
     <img src="{% static "images/about.jpg" %}" alt="Picture of gears"style="width:500px;height:300px;" />
     <br />
     <img src="{{MEDIA_URL}}cat.jpg" alt="Picture of cat" style="width:500px;height:300px;"/>
